@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" href="images/favicon.ico" />
+  <title>Keller's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.navbar {
+		margin-left:0 ;
+		margin-bottom: 0;
+		border-radius: 0;
+		background: linear-gradient(#1047a0,#000000);
+		padding: 0;
+		font-size: 1.4em;
+		border: 0;
+		min-height: 50px !important;
+	}
+	.navbar-nav > li > a {
+		text-align: center;
+		padding-top:1px !important;
+		padding-bottom:1px !important;
+		line-height: 50px;
+		color: #ffffff;
+	}
+	.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+		color: #ffffff;
+		background: linear-gradient(#0a2b63,#000000);
+		line-height: 50px;
+	}
+	.navbar .nav li a, .navbar .navbar-brand {
+		color: #ffffff;
+	}
+	.jumbotron-fluid {
+		background-image: url("images/background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: white;
+	}
+	body {
+		background-color: black;
+		color:white;
+	}
+	.list-group-item {
+		color: white !important;
+		background-color: black;
+		border: none;
+    		border-bottom: 3px solid red;
+		border-image: linear-gradient(to right, #0a2b63,#000000) 15
+	}
+	.list-group-item:hover {
+		background: linear-gradient(to right, #0a2b63,#000000);
+	}
+	.list-group > .active {
+		background-color: black !important;
+		font-weight: bold;
+	}
+	#footer {
+		background: linear-gradient(#000000,#0a2b63);
+		width: 100%;
+		color: white;
+	}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Keller's Blog/Portfolio</a>
+    </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="projects.html">Portfolio</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- end header -->
+
+<div style="padding-left: 0" class="container-fluid">
+<div class="row">
+<div style="padding-top: 100px" class="col-md-2">
+<div class="list-group">
+  <a href="projects.html" class="list-group-item">Project Home</a>
+  <a href="project1.html" class="list-group-item">Project 1</a>
+  <a href="project2.html" class="list-group-item">Project 2</a>
+  <a href="project3.html" class="list-group-item active">Project 3</a>
+</div>
+</div>
+<div style="padding-bottom: 100px" class="col-md-8 text-center">
+	  <h1>Project 3</h1>
+		<h2>These are some small tasks that I've completed using a mix of Python, Perl and Bash</h2>
+		<h3>Link To Tasks: <a href="https://github.com/kellerHuang/Comp2041TestHub">2041 Task Files</a></h3>
+		<p style="text-align: justify; margin: 50px; padding-left: 200px; padding-right: 200px"> These are the weekly tests I did during my 2041 course. These tests were completed in strictly under an hour.<br>
+		<br>
+		I think that this was honestly the most entertaining part of the COMP2041 course I did at UNSW. If anything, some of these tasks were perhaps a tad too simple for the 1 hour time limit. However, these tasks really
+		show the importance to have a certain "feel" for coding, where the niches of each language could break your program without you even knowing it, and possibly taking a long time to fix. A good example I encountered would be 
+    sys.argv including the script name in python, whilst in perl, the 0th member of @ARGV would not be the script name, as well as differences in python's len, as compared to perl's length functions.<br>
+		<br>
+		These tasks for me felt really useful in appreciating each different language and what would be easy in one language and difficult in another. Coming from compiled languages such as C and Java, these scripting languages are 
+    vastly easier to put together for these smaller tasks yet still capable of creating larger projects with useful imported modules such as Requests to make webpages, NumPy to do calculations and wxPython for GUI.</p>
+</div>
+</div>
+</div>
+<nav class="navbar-fixed-bottom">
+<div id="footer" class="container text-center" >
+		<h2>Contact Me!</h2>
+		<a href="https://www.linkedin.com/in/keller-huang" style="font-size: 250%; color: white" class="fa fa-linkedin-square"></a>
+</div>
+</nav>
+</body>
+</html>
