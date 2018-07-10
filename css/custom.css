@@ -1,0 +1,14 @@
+/*!
+ * CSS for site
+*/
+#tmNavbar {
+    width: 75% !important
+}
+
+.nav-item {
+    width: 33% !important
+}
+
+.nav-item > a {
+    width: 1% !important
+}
